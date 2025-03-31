@@ -1,12 +1,19 @@
 #!/bin/bash
-1
+
 # === VARIABLES ===
+# === TIMESTAMP : Variable contenant la date et l'heure actuelles au format YYYYMMDD_HHMMSS, utilisée comme horodatage ===
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+# === LOG_DIR : Répertoire où les fichiers de log seront stockés ===
 LOG_DIR="./logs"
+# === LOG_FILE : Nom du fichier de log spécifique pour l'installation, incluant un horodatage (TIMESTAMP) ===
 LOG_FILE="$LOG_DIR/postinstall_$TIMESTAMP.log"
+# === CONFIG_DIR : Répertoire où les fichiers de configuration sont stockés ===
 CONFIG_DIR="./config"
+# === PACKAGE_LIST : Chemin vers le fichier contenant la liste des paquets à installer ===
 PACKAGE_LIST="./lists/packages.txt"
+# === USERNAME : Nom de l'utilisateur actuellement connecté ===
 USERNAME=$(logname)
+#USER_HOME : Répertoire personnel de l'utilisateur, basé sur son nom d'utilisateur ===
 USER_HOME="/home/$USERNAME"
 
 # === FUNCTIONS ===

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+1
 # === VARIABLES ===
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 LOG_DIR="./logs"

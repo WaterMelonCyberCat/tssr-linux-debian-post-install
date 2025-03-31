@@ -1,4 +1,14 @@
 nmap
 net-tools
 htop
-curl
+curl 
+ca-certificates
+ccze   
+iptables-persistent 
+man 
+neofetch  
+tcpdump 
+unzip 
+mousepad
+wget 
+zip

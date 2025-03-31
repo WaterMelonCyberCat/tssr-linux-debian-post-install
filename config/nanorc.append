@@ -1,4 +1,41 @@
+# Enable line numbers in the left margin of the editor
 set linenumbers
+
+# Enable soft wrapping of long lines (lines wrap visually without inserting line breaks)
 set softwrap
+
+# Set the width of a tab character to 4 spaces
 set tabsize 4
+
+# Enable mouse support for navigation and text selection
 set mouse
+
+# Enable syntax highlighting for supported file types by including predefined syntax files
+include /usr/share/nano/*.nanorc
+
+# Highlight the current line where the cursor is located
+set highlight
+
+# Enable smooth scrolling (scrolls one line at a time instead of jumping)
+set smooth
+
+# Show the cursor's position (line and column) in the status bar
+set constantshow
+
+# Automatically indent new lines to match the indentation of the previous line
+set autoindent
+
+# Convert typed tabs into spaces for consistent formatting
+set tabstospaces
+
+# Make searches case-insensitive by default
+set casesensitive
+
+# Enable backup files (creates a backup of the file being edited with a ~ suffix)
+set backup
+
+# Disable the welcome message when opening nano
+set nowelcome
+
+# Enable undo/redo functionality in nano
+set undo
